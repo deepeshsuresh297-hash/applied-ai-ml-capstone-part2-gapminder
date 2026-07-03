@@ -1,0 +1,31 @@
+Part 2 generated results summary
+Regression target: lifeExp
+Classification median threshold: 60.7125
+
+Regression model comparison:
+                       model       MSE       R2
+     Linear Regression (OLS) 13.193297 0.920854
+Ridge Regression (alpha=1.0) 13.192262 0.920860
+
+Top three OLS coefficients by absolute value:
+         feature  coefficient  absolute_coefficient
+            year     5.590646              5.590646
+             pop     1.995010              1.995010
+continent_Europe     1.800299              1.800299
+
+Baseline logistic metrics:
+ accuracy  precision   recall       F1      AUC
+ 0.932551   0.910615 0.958824 0.934097 0.984211
+
+Best F1 threshold:
+ threshold  precision   recall       F1
+       0.6   0.941176 0.941176 0.941176
+
+Regularisation comparison:
+                       model  precision   recall       F1      AUC
+ Logistic Regression (C=1.0)   0.910615 0.958824 0.934097 0.984211
+Logistic Regression (C=0.01)   0.905028 0.952941 0.928367 0.969281
+
+Bootstrap AUC-difference summary:
+ bootstrap_samples  mean_auc_difference_C1_minus_C001  ci_2_5_percent  ci_97_5_percent  ci_excludes_zero
+               500                           0.014832        0.006832         0.024837              True

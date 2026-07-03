@@ -1,0 +1,2 @@
+bootstrap_samples,mean_auc_difference_C1_minus_C001,ci_2_5_percent,ci_97_5_percent,ci_excludes_zero
+500,0.014831959452924998,0.006831846263427821,0.024836755870111308,True
